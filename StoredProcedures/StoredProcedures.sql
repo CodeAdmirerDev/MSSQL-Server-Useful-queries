@@ -214,6 +214,10 @@ Use version numbers in comments at the top of the stored procedure for tracking 
     Author: CodeAdmirer
     Date: 2024-09-12
 */
+
+*/
+
+/*
 Conclusion
 Stored procedures in SQL Server provide a powerful way to encapsulate business logic, improve performance, and simplify database management. 
 Following the above best practices and coding standards will help you create efficient and maintainable stored procedures, optimized for performance and scalability.
