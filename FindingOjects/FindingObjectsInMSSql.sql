@@ -77,3 +77,9 @@ FROM sys.databases
 
 SET @sql = LEFT(@sql, LEN(@sql) - 10) -- Remove the last UNION ALL
 EXEC sp_executesql @sql
+
+--10. List All Tables, Views, and Functions in a Database
+
+SELECT name, type_desc 
+FROM sys.objects 
+WHERE type IN ('U', 'V', 'FN', 'IF', 'TF') -- U = Table, V = View, FN = Scalar Function, IF = Inline Function, TF = Table Function
